@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Notes - PWA</title>
+    <title>Studenttt Notes - PWA</title>
     <link rel="manifest" href="manifest.json" />
 
     <style>
@@ -225,7 +225,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Student Notes</h1>
+      <h1>My Student Noteeee</h1>
 
       <div class="card">
         <div class="input-group">
@@ -390,7 +390,10 @@
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("service-worker.js")
-          .then(() => console.log("SW registered"))
+          .then((registration) => {
+            console.log("SW register");
+            registration.update();
+          })
           .catch((err) => console.log("SW error:", err));
       }
     </script>
