@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-cache-v6";
+const CACHE_NAME = "pwa-cache-v4";
 
 // files to cache immediately (static assets)
 const STATIC_ASSETS = ["./", "./index.html", "./manifest.json", "./icon.png"];
